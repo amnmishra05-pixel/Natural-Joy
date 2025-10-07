@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <script src="script.js" defer></script>
+    <title>Bestseller</title>
+</head>
+<body>
+
+    <!-- Top NavBar -->
+    <section class="topNav">
+        <div class="topLink">
+            <a href="Join-us.html">Join Us</a><span>|</span>
+            <a href="Sign-in.html">Sign In</a><span>|</span>
+            <a href="Help-us.html#Contact-us">Contact Us</a><span>|</span>
+            <a href="Help-us.html">Help</a>
+        </div>
+    </section>
+
+    <!-- Primary NavBar -->
+    <section class="primaryNav">
+        <nav>
+            <div class="nav-left">
+                <h4><a href="index.html">LOGO</a></h4>
+            </div>
+            <div class="nav-center">
+                <a href="New&More.html">New & More</a>
+                <a href="Flavors.html">Flavors</a>
+                <a href="Sale.html">Sale</a>
+                <a href="Today-Sale.html">Today's Sale</a>
+                <a href="Bestseller.html">Bestseller</a>
+            </div>
+            <div class="nav-right">
+                <div class="search">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <input type="search" name="search" id="search" placeholder="Search">
+                </div>
+                <a href="Favourite.html">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="Add-to-bag.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <a href="#" class="menu" id="humburgerMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- HIDE NAVIGATION BAR THAT OPEN ON TABLET MODE -->
+    <section class="hidden-navigation" id="hiddenNav">
+        <div class="hidden-navbar">
+            <div class="close-btn" id="closerBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="hide-nav">
+                <a href="New&More.html">New & More</a>
+                <a href="Flavors.html">Flavors</a>
+                <a href="Sale.html">Sale</a>
+                <a href="Today-Sale.html">Today's Sale</a>
+                <a href="Bestseller.html">Bestseller</a>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- TITLE OF PAGE -->
+    <section class="today-sale">
+        <div class="today-text">
+            <p>Bestseller</p>
+        </div>
+    </section>
+
+    <!-- NUMBER OF PRODUCT SHOWING -->
+    <section class="sale">
+    <div class="sale-count margin">
+        <p>Bestseller <span>(0)</span></p>
+    </div>
+    </section>
+    <!-- SALE_PRODUCT SECTION -->
+
+        <!-- FILTER SECTION -->
+        <div class="filter">
+            <button class="fruit-filter" value="all">Show All</button> <span style="font-size: 22px;">&#124;</span>
+            <button class="fruit-filter" value="mango">Mango Flavour</button>
+            <button class="fruit-filter" value="apple">Apple Flavour</button>
+            <button class="fruit-filter" value="blueberry">Blueberry Flavour</button>
+            <button class="fruit-filter" value="lemon">Lemon Flavour</button>
+            <button class="fruit-filter" value="kiwi">Kiwi Flavour</button>
+            <button class="fruit-filter" value="lime">Lime Flavour</button>
+            <button class="fruit-filter" value="peach">Peach Flavour</button>
+            <!-- <button class="fruit-filter" value="pineapple">Pineapple Flavour</button> -->
+        </div> 
+
+
+    <section class="filter-sale margin" >
+        <div class="filter-product">
+            <!-- PRODUCT SECTION -->
+            <div class="product" style="width: 100%;">
+                <!--1st Product-row-->
+                <div class="trending-pro">
+                    <div class="pro In-trending">
+                        <div class="black-cover">
+                            <div class="trending-img">
+                                <!-- <img src="./Site-img/Blueberry Picture.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="trending-text">
+                                <p>Get the Flavour Everyone's <br> Talking About</p>
+                                <a href="Flavors.html">
+                                    <button>Try the Trend</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Message if no products -->
+                <p id="no-products" style="display:none; text-align:center; color:red; font-weight:bold;">
+                    Sorry, no products available for this flavor!
+                </p>
+
+
+                <div class="pro-row">	
+                    <!-- 1st Product -->
+                    <div class="pro" data-flavor="kiwi">
+                        <div class="pro-img Best-seller">
+                            <!-- <img src="./Site-img/Kiwi Can 1.png" alt="Your is produt image"> -->
+                        </div>
+                        <div class="pro-text bestseller-tag">
+                            <span>Bestseller</span>
+                            <p>Kiwi Flavor</p>
+                            <h2>Pure Kiwi Juice</h2>
+                            <h2>₹299.00 | <span>₹349.00</span></h2>
+                        </div>
+                    </div>
+                    <!-- 2nd Product -->
+                    <div class="pro"  data-flavor="alphonso-mango">
+                        <div class="pro-img Best-seller">
+                            <!-- <img src="./Site-img/Peach Can 1.jpg" alt="Your is produt image"> -->
+                        </div>
+                        <div class="pro-text bestseller-tag">
+                            <span>Bestseller</span>
+                            <p>Peach Flavor</p>
+                            <h2>Peach with Light-Sour</h2>
+                            <h2>₹249.00 | <span>₹289.00</span></h2>
+                        </div>
+                    </div>
+                    <!-- 3rd Product -->
+                    <div class="pro" data-flavor="alphonso-mango">
+                        <div class="pro-img Best-seller">
+                            <!-- <img src="./Site-img/Sweet Lime Can 1.jpg" alt="Your is produt image"> -->
+                        </div>
+                        <div class="pro-text bestseller-tag">
+                            <span>Bestseller</span>
+                            <p>Sweet Lime Flavor</p>
+                            <h2>Sweet-Lime with Light-Salt</h2>
+                            <h2>₹99.00 | <span>₹149.00</span></h2>
+                        </div>
+                    </div>
+                    <!-- 4th Product -->
+                    <a href="Product.html">	
+                        <div class="pro">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Lemon Can 1.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Lemon Flavor</p>
+                                <h2>Slaty-Soda with Lemon</h2>
+                                <h2>₹159.00 | <span>₹229.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 5th Product -->
+                    <a href="Product.html">
+                        <div class="pro" data-flavor="apple">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Apple Can 3.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Apple Flavor</p>
+                                <h2>Apple with Hell-engery</h2>
+                                <h2>₹249.00 | <span>₹289.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 6th Product -->
+                    <a href="Product.html">
+                        <div class="pro" data-flavor="blueberry">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Blueberry Can 1.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Blueberry Flavor</p>
+                                <h2>Pure Blueberry Jucie</h2>
+                                <h2>₹299.00 | <span>₹399.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 7th Product -->
+                    <a href="Product.html">
+                        <div class="pro" data-flavor="kiwi">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Kiwi Can 1.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Kiwi Flavor</p>
+                                <h2>Pure Kiwi Juice</h2>
+                                <h2>₹299.00 | <span>₹349.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 8th Product -->
+                    <a href="Product.html">
+                        <div class="pro" data-flavor="peach">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Peach Can 1.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Peach Flavor</p>
+                                <h2>Peach with Light-Sour</h2>
+                                <h2>₹249.00 | <span>₹289.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 9th Product -->
+                    <a href="Product.html">
+                        <div class="pro" data-flavor="lime">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Sweet Lime Can 1.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Sweet Lime Flavor</p>
+                                <h2>Sweet-Lime with Light-Salt</h2>
+                                <h2>₹99.00 | <span>₹149.00</span></h2>
+                            </div>
+                        </div>		
+                    </a>
+                    <!-- 10th Product -->
+                    <a href="Product.html" data-flavor="lemon">	
+                        <div class="pro">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Lemon Can 1.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Lemon Flavor</p>
+                                <h2>Slaty-Soda with Lemon</h2>
+                                <h2>₹159.00 | <span>₹229.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 11th Product -->
+                    <a href="Product.html">
+                        <div class="pro" data-flavor="apple">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Apple Can 3.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Apple Flavor</p>
+                                <h2>Apple with Hell-engery</h2>
+                                <h2>₹249.00 | <span>₹289.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- 12th Product -->
+                    <a href="Product.html">
+                        <div class="pro" data-flavor="blueberry">
+                            <div class="pro-img Best-seller">
+                                <!-- <img src="./Site-img/Blueberry Can 1.jpg" alt="Your is produt image"> -->
+                            </div>
+                            <div class="pro-text bestseller-tag">
+                                <span>Bestseller</span>
+                                <p>Blueberry Flavor</p>
+                                <h2>Pure Blueberry Jucie</h2>
+                                <h2>₹299.00 | <span>₹399.00</span></h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <hr style="width: 90%; margin: 0 auto;">
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="foot-link">
+            <ul>   
+                <li><strong>Resources</strong></li>
+                <li>Find A Store</li>
+                <li>Become A Member</li>
+                <li>Product Advice</li>
+                <li>Send Us Feedback</li>
+            </ul>
+            <ul>
+                <li><strong>Help</strong></li>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Delivery</li>
+                <li>Returns</li>
+                <li>Payment Options</li>
+                <li>Contact Us On LOGO.com Inquiries</li>
+            </ul>
+            <ul>
+                <li><strong>Company</strong></li>
+                <li>About LOGO</li>
+                <li>News</li>
+                <li>Careers</li>
+                <li>Sustainbility</li>
+                <li>Impact</li>
+                <li>Report Concern</li>
+            </ul>
+            <ul>    
+                <li><strong>India</strong></li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </li>
+            </ul>
+        </div>
+         <footer>
+            <p>&copy; <a href="#"> 2025 LOGO, Inc. All rights reserved &nbsp; | &nbsp; </a>
+                <a href="#">Guides</a>&nbsp; | &nbsp;
+                <a href="#">Terms of Sale</a>&nbsp; | &nbsp;
+                <a href="#">Terms of Use</a>&nbsp; | &nbsp;
+                <a href="#">LOGO Privacy Policy</a>&nbsp; | &nbsp;
+            </p>
+        </footer>
+    </section>
+
+
+
+
+    
+
+</body>
+</html>

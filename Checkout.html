@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <title>Checkout</title>
+</head>
+<body>
+    
+
+    
+    <section class="check-head">
+        <h1>Member Checkout</h1>
+        <h3>1800 811 6453</h3>
+    </section>
+    <section class="checkout">
+
+        <div class="checkout-details">
+            <div class="check-title">
+                <p>Delivery</p>
+            </div>      
+            <div class="checkout-input">
+                <div class="check-name check-input">
+                    <div class="check-text check-input "><p>Enter your name and address:</p></div>
+                    <input type="text" name="first name" id="firts name" placeholder="First Name">
+                    <input type="text" name="last name" id="last name" placeholder="Last Name">
+                    <input type="text" name="addres" id="addres" placeholder="Start typing street address or pincod">
+                    <div class="small-note-email"><p>Enter address manually</p></div>
+                </div>
+                <div class="check-email check-input">
+                    <div class="check-text"><p>What's your contact information?</p></div>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                    <div class="small-note"><p>A confirmation email will be sent after checkout.</p></div>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <div class="small-note"><p>A carrier might contact you to confirm delivery.</p></div>
+                </div>
+            </div>
+            <div class="checkout-input payment-input">
+                <div class="check-title">
+                    <p>Payment</p>
+                </div>
+                <div class="check-promo check-input">
+                    <div class="check-promo"><p>Have a promo code?</p></div>
+                    <div class="promo">
+                        <input type="text" name="promo" id="promo" placeholder="Promo">
+                        <div class="promo-btn"><button style="background: #000; color: #fff; border-radius: 2rem;">Apply</button></div>
+                    </div>
+                    <div class="small-note"><p>Limit 1 promo per order.</p></div>
+                </div>
+                <div class="check-pay-method check-input">
+                    <div class="check-text"><p>How would you like to pay?</p></div>
+                    <div class="pay-btn"><button>Credit or Debit Card</button></div>
+                    <div class="pay-btn UPI"><button>UPI Method</button></div>
+                    <div class="pay-btn google"><button>Google</button></div>
+                    <div class="pay-btn paypal"><button>PayPal</button></div>
+                </div>
+                <div class="check-card-details check-input">
+                    <div class="check-text"><p>Enter your payment details:</p></div>
+                    <input type="text" name="name-on-card" id="name-on-card" placeholder="Name on Card">
+                    <input type="text" name="card-number" id="card-number" placeholder="Card Number">
+                    <div class="card-expiry">
+                        <input type="text" name="mm-yy" id="mm-yy" placeholder="MM/YY">
+                        <input type="text" name="cvv" id="cvv" placeholder="CVV">
+                    </div>
+                </div>
+                <div class="check-box">
+                    <label for="save-card">
+                        <input type="checkbox" name="save-card" id="save-card">
+                        <p>Save card for later use</p>
+                    </label>
+                </div>
+                <div class="check-input">
+                    <p class="small-note">By clicking Place Order, you agree to the ESW Terms and Conditions.</p>
+                </div>
+
+            </div>
+                <div class="head-btn place-order-btn">
+                    <button>Place  Order</button>
+                </div>
+        </div>
+
+
+        <div class="summary-check">
+            <div class="check-title">
+                <p>Order Summary</p>
+            </div>
+            <div class="bag-text sub-total">
+                <p>Subtotal</p>
+                <p> ₹109.00</p>
+            </div>
+            <div class="bag-text delivery-charge">
+                <p>Estimated Delivery & Handling</p>
+                <p>Free</p>
+            </div>
+            <hr style="margin-top: 32px;">
+            <div class="bag-text total">
+                <p>Total</p>
+                <p> ₹109.00</p>
+            </div>
+            <hr>
+            <div class="check-input arrive-time">
+                <p class="small-note">(The total reflects the price of your order, including all duties and taxes)</p>
+                <p>Arrives Today, 20 Min - 30 Min</p>
+            </div>
+
+            <div class="product-detail">
+				<div class="bag-img check-img">
+				    <div class="bag-pro-image">
+                        <img src="./Site-img/Lemon Can 3.png" alt="">
+                    </div>
+				</div>
+				<div class="bag-detail">
+					<div class="bag-check-text">
+						<p>Mango with Light-Salt</p>
+					</div>
+					<div class="check-flavor-size check-fav-text">
+                        <p>Mango Drink</p>
+                        <p>Qty <span>1</span></p>
+                        <p>Size <span>500 ML</span></p>
+                        <p>₹ 109.00</p>
+					</div>
+				</div>	
+			</div>
+        
+        </div>
+    </section>
+
+    <footer class="check-footer">
+        <p>INDIA</p>
+        <p>&copy; 2025 LOGO, Inc. All rights reserved &nbsp; | &nbsp;
+            <a href="#">Guides</a>&nbsp; | &nbsp;
+            <a href="#">Terms of Sale</a>&nbsp; | &nbsp;
+            <a href="#">Terms of Use</a>&nbsp; | &nbsp;
+            <a href="#">LOGO Privacy Policy</a>&nbsp; | &nbsp;
+        </p>
+    </footer>
+
+
+</body>
+</html>

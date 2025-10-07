@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-query.css">
+    <script src="script.js" defer></script>
+    <title>Add to Bag</title>
+</head>
+<body>
+    
+
+    <!-- Top NavBar -->
+    <section class="topNav">
+        <div class="topLink">
+            <a href="Join-us.html">Join Us</a><span>|</span>
+            <a href="Sign-in.html">Sign In</a><span>|</span>
+            <a href="Help-us.html#Contact-us">Contact Us</a><span>|</span>
+            <a href="Help-us.html">Help</a>
+        </div>
+    </section>
+
+    <!-- Primary NavBar -->
+    <section class="primaryNav">
+        <nav>
+            <div class="nav-left">
+                <h4><a href="index.html">LOGO</a></h4>
+            </div>
+            <div class="nav-center">
+                <a href="New&More.html">New & More</a>
+                <a href="Flavors.html">Flavors</a>
+                <a href="Sale.html">Sale</a>
+                <a href="Today-Sale.html">Today's Sale</a>
+                <a href="Bestseller.html">Bestseller</a>
+            </div>
+            <div class="nav-right">
+                <div class="search">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <input type="search" name="search" id="search" placeholder="Search">
+                </div>
+                <a href="Favourite.html">
+                    <i class="fa-solid fa-heart"></i>
+                </a>
+                <a href="Add-to-bag.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+                <a href="#" class="menu" id="humburgerMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- HIDE NAVIGATION BAR THAT OPEN ON TABLET MODE -->
+    <section class="hidden-navigation" id="hiddenNav">
+        <div class="hidden-navbar">
+            <div class="close-btn" id="closerBtn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="hide-nav">
+                <a href="New&More.html">New & More</a>
+                <a href="Flavors.html">Flavors</a>
+                <a href="Sale.html">Sale</a>
+                <a href="Today-Sale.html">Today's Sale</a>
+                <a href="Bestseller.html">Bestseller</a>
+            </div>
+        </div>
+    </section>
+
+
+	<!-- Product those are added to Bag -->
+    <section class="Bag">
+		<div class="add-to-bag">
+			<div class="bag-product">
+				<div class="add-bag">
+					<div class="content-title bag-title">
+						<h1>Bag</h1>
+					</div>
+				</div>
+				<!-- 1st Added Product to Bag -->
+				<div class="product-detail">
+					<div class="bag-img">
+						<div class="bag-pro-image bag-img1">
+                            <img src="./Site-img/Lemon Can 3.png" alt="">
+                        </div>
+						<div class="bag-feature">
+                            <div class="quantity-pluse-minus">
+							    <span>-</span>
+							    <span>1</span>
+							    <span>+</span>
+    						</div>
+                            <div class="fav-icon">
+                                <div class="fav-icon-shape">
+                                    <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+					</div>
+					<div class="bag-detail">
+						<div class="bag-text">
+							<p>Mango with Light-Salt</p>
+							<p>₹ 109.00</p>
+						</div>
+						<div class="flavor-size">
+							<p>Mango Flavor</p>
+							<p><a href="#">Select Size</a></p>
+						</div>
+					</div>	
+				</div>
+				<hr style="margin: 42px 0;">
+				
+				<!-- 2nd Added Product to Bag -->
+				<div class="product-detail">
+					<div class="bag-img">
+						<div class="bag-pro-image bag-img2">
+                            <img src="./Site-img/Apple Can 3.png" alt="">
+                        </div>
+						<div class="bag-feature">
+                            <div class="quantity-pluse-minus">
+							    <span>-</span>
+							    <span>1</span>
+							    <span>+</span>
+    						</div>
+                            <div class="fav-icon">
+                                <div class="fav-icon-shape">
+                                    <i class="fa-solid fa-heart"></i>
+                            </div>
+                        </div>
+                    </div>
+					</div>
+					<div class="bag-detail">
+						<div class="bag-text">
+							<p>Mango with Light-Salt</p>
+							<p>₹ 109.00</p>
+						</div>
+						<div class="flavor-size">
+							<p>Mango Flavor</p>
+							<p><a href="#">Select Size</a></p>
+						</div>
+					</div>	
+				</div>
+				<hr style="margin: 42px 0;">
+			</div>
+
+			<div class="summary">
+				<div class="bag-title summary-title">
+					<h1>Summary</h1>
+				</div>
+				<div class="bag-text sub-total">
+					<p>Subtotal</p>
+					<p> ₹109.00</p>
+				</div>
+				<div class="bag-text delivery-charge">
+					<p>Estimated Delivery & Handling</p>
+					<p>Free</p>
+				</div>
+				<hr style="margin-top: 32px;">
+				<div class="bag-text total">
+					<p>Total</p>
+					<p> ₹109.00</p>
+				</div>
+				<hr>
+				<div class="member-checkout">
+					<a href="Checkout.html" class="a-check"><button>Member Checkout</button></a>
+					<a href="#" class="pay-check"><button>PayPal</button></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Product those are added in Favourite  -->
+    <section>
+		<div class="added-favourite">
+			<div class="content-title">
+				<h1>Favourite</h1>
+			</div>				
+			<div class="bag-fav-product">
+				<!-- 1st Proposal to Add Product to Bag -->	
+				<div class="product-detail">
+					<div class="bag-fav-img">
+						<div class="bag-pro-image bag-fav-img3">
+                            <img src="./Site-img/Blueberry Can 1.png" alt="">
+                        </div>
+					</div>
+					<div class="bag-detail">
+						<div class="bag-text">
+							<p>Pure Blueberry Juice</p>
+							<p>₹ 249.00</p>
+						</div>
+						<div class="flavor-size fav-btn bag-fav-text">
+							<p>Blueberry Flavor</p>
+							<p><a href="#">Select Size</a></p>
+							<button>Add to Bag</button>
+						</div>
+					</div>	
+				</div>
+				<!-- 2nd Proposal to Add Product to Bag -->
+				<div class="product-detail">
+					<div class="bag-fav-img">
+						<div class="bag-pro-image bag-fav-img3">
+                            <img src="./Site-img/Apple Can 1.png" alt="">
+                        </div>
+					</div>
+					<div class="bag-detail">
+						<div class="bag-text">
+							<p>Pure Blueberry Juice</p>
+							<p>₹ 249.00</p>
+						</div>
+						<div class="flavor-size fav-btn bag-fav-text">
+							<p>Blueberry Flavor</p>
+							<p><a href="#">Select Size</a></p>
+							<button>Add to Bag</button>
+						</div>
+					</div>	
+				</div>
+                <!-- 3rd Proposal to Add Product to Bag -->
+                <div class="product-detail">
+                    <div class="bag-fav-img">
+                        <div class="bag-pro-image bag-fav-img3">
+                            <img src="./Site-img/Lemon Can 4.png" alt="">
+                        </div>
+                    </div>
+                    <div class="bag-detail">
+                        <div class="bag-text">
+                            <p>Pure Blueberry Juice</p>
+                            <p>₹ 249.00</p>
+                        </div>
+                        <div class="flavor-size fav-btn bag-fav-text">
+                            <p>Blueberry Flavor</p>
+                            <p><a href="#">Select Size</a></p>
+                            <button>Add to Bag</button>
+                        </div>
+                    </div>	
+                </div>
+			</div>
+			<div class="bag-fav-product bag-fav">
+				<!-- 4th Proposal to Add Product to Bag -->
+				<!-- <div class="product-detail">
+					<div class="bag-fav-img">
+						<div class="bag-pro-image bag-fav-img4"></div>
+					</div>
+					<div class="bag-detail">
+						<div class="bag-text">
+							<p>Kiwi with Light-Sour</p>
+							<p>₹ 299.00</p>
+						</div>
+						<div class="flavor-size fav-btn bag-fav-text">
+							<p>Kiwi Flavor</p>
+							<p><a href="#">Select Size</a></p>
+							<button>Add to Bag</button>
+						</div>
+					</div>	
+				</div> -->
+			</div>
+			<hr style="margin-bottom: 22px;">
+		</div>
+		<div class="go-to-fav">
+			<a href="Favourite.html">Go to Favourite</a>
+		</div>
+    </section>
+
+
+
+
+    <!-- Related Product -->
+    <section class="slider-container" style="margin-top: 12vh;">
+
+        <div class="product-slid-arrow">
+            <h1>Your Flavors</h1>
+            <div class="slid-arrow">
+                <i id="slideLeft" class="fa-solid fa-circle-chevron-left"></i>
+                <i id="slideRight" class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+        </div>
+        <!-- 1st Product -->
+        <div class="product-slider" id="productSlider">
+            <a href="Product 2nd.html">
+                <div class="product-card active" style="margin-left: 2rem;">
+                    <div class="slider-img">
+                        <img src="./Site-img/Lime Can 2.png" alt="Your is produt image">
+                    </div>  
+                    <div class="pro-text slider-details">
+                        <p>In Stock</p>
+                        <h2>Sweet Lime with Soda</h2>
+                        <p>Lime Flavor</p>
+                        <h2>₹149.00 | <span>₹289.00</span></h2>
+                    </div>
+                </div>
+            </a>
+            <!-- 2nd Product -->
+             <a href="Product 2nd.html">
+                <div class="product-card">
+                    <div class="slider-img">
+                        <img src="./Site-img/Lemon Can 3.png" alt="Your is produt image">
+                    </div>
+                    <div class="pro-text slider-details">
+                        <p>In Stock</p>
+                        <h2>Pure Sweet Mango</h2>
+                        <p>Mango Flavor</p>
+                        <h2>₹149.00 | <span>₹289.00</span></h2>
+                    </div>
+                </div>
+            </a>
+            <!-- 3rd Product -->
+             <a href="Product 2nd.html">
+                <div class="product-card">
+                    <div class="slider-img">
+                        <img src="./Site-img/Apple Can 2.png" alt="Your is produt image">
+                    </div>
+                    <div class="pro-text slider-details">
+                        <p>In Stock</p>
+                        <h2>Apple with Fizz</h2>
+                        <p>Apple Flavor</h>
+                        <h2>₹149.00 | <span>₹239.00</span></h2>
+                    </div>
+                </div>
+            </a>
+            <!-- 4th Product -->
+             <a href="Product 2nd.html">
+                <div class="product-card">
+                    <div class="slider-img">
+                        <img src="./Site-img/Blueberry Can 1.png" alt="Your is produt image">
+                    </div>
+                    <div class="pro-text slider-details">
+                        <p>In Stock</p>
+                        <h2>Pure Bluberry Juice</h2>
+                        <p>Blueberry Flavor</p>
+                        <h2>₹299.00 | <span>₹399.00</span></h2>
+                    </div>
+                </div>
+            </a>
+            <!-- 5th Product -->
+            <a href="Product 2nd.html">
+                <div class="product-card">
+                    <div class="slider-img">
+                        <img src="./Site-img/Kiwi Can 1.png" alt="Your is produt image">
+                    </div>
+                    <div class="pro-text slider-details">
+                        <p>In Stock</p>
+                        <h2>Pure Kiwi Juice</h2>
+                        <p>Kiwi Flavor</p>
+                        <h2>₹329.00 | <span>₹389.00</span></h2>
+                    </div>
+                </div>
+            </a>
+            <!-- 6th Product -->
+            <a href="Product 2nd.html">
+                <div class="product-card">
+                    <div class="slider-img">
+                        <img src="./Site-img/Peach Can 2.png" alt="Your is produt image">
+                    </div>
+                    <div class="pro-text slider-details">
+                        <p>In Stock</p>
+                        <h2>Pure Peach Flavour</h2>
+                        <p>Peach Flavor</p>
+                        <h2>₹249.00 | <span>₹339.00</span></h2>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <hr style="width: 96%; margin: 2rem auto 0 auto;">
+
+
+
+
+    <!-- Footer Section -->
+    <section class="footer">
+        <div class="foot-link">
+            <ul>   
+                <li><strong>Resources</strong></li>
+                <li>Find A Store</li>
+                <li>Become A Member</li>
+                <li>Product Advice</li>
+                <li>Send Us Feedback</li>
+            </ul>
+            <ul>
+                <li><strong>Help</strong></li>
+                <li>Get Help</li>
+                <li>Order Status</li>
+                <li>Delivery</li>
+                <li>Returns</li>
+                <li>Payment Options</li>
+                <li>Contact Us On LOGO.com Inquiries</li>
+            </ul>
+            <ul>
+                <li><strong>Company</strong></li>
+                <li>About LOGO</li>
+                <li>News</li>
+                <li>Careers</li>
+                <li>Sustainbility</li>
+                <li>Impact</li>
+                <li>Report Concern</li>
+            </ul>
+            <ul>    
+                <li><strong>India</strong></li>
+                <li>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            <p>&copy; <a href="#"> 2025 LOGO, Inc. All rights reserved &nbsp; | &nbsp; </a>
+                <a href="#">Guides</a>&nbsp; | &nbsp;
+                <a href="#">Terms of Sale</a>&nbsp; | &nbsp;
+                <a href="#">Terms of Use</a>&nbsp; | &nbsp;
+                <a href="#">LOGO Privacy Policy</a>&nbsp; | &nbsp;
+            </p>
+        </footer>
+    </section>
+
+
+</body>
+</html>
